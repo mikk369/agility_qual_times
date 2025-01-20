@@ -1,0 +1,105 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'rubik', sans-serif;
+}
+
+/* Container for the entire section */
+.qual-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px;
+}
+
+/* Style for the year selector */
+.year-selector {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.year-button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.year-button:hover {
+  background-color: #45a049;
+}
+
+.qual-grid-container {
+  display: grid;
+  grid-template-columns: repeat(4, auto);
+  gap: 20px;
+  width: 100%;
+  max-width: 1200px; 
+}
+
+.qual-box {
+  border: 1px solid #0071FF;
+  border-radius: 8px;
+  padding: 25px 25px;
+}
+
+.qual-box h2 {
+  font-size: 3rem;
+  /* margin-bottom: 0.5em; */
+}
+
+.qual-box p {
+  /* margin: 1rem 0; */
+  font-size: 14px;
+}
+
+.qual-time {
+  color: #0071ff;
+  
+}
+
+.qual {
+  font-weight: 900;
+}
+
+.year-button {
+  background-color: #edf4ff; /* Default background for non-active buttons */
+  color: #0071ff;
+  border: none;
+  padding: 15px 25px;
+  cursor: pointer;
+  font-size: 16px;
+  margin: 0 5px;
+}
+
+.year-button.active {
+  background-color: #0071ff; /* Background for the active button */
+  color: white;
+}
+
+.year-button:hover {
+  background-color: #0071ff; /* Slightly darker color on hover */
+}
+
+.loading-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  z-index: 9999; /* Ensure the loading message is on top */
+}
+
+.loading {
+  font-family: 'rubik', sans-serif;
+  font-size: 24px;
+  font-weight: bold;
+}
