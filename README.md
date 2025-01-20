@@ -24,6 +24,7 @@ Once activated, you can add the plugin's functionality to any page or post by us
 
 ```text
 [qual_times]
+```
 
 ## Changes
 
