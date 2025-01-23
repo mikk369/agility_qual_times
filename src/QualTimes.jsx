@@ -52,7 +52,13 @@ function QualTimes({ events, loading, error }) {
       (event) =>
         event.qualTime && // Only include events with a valid qualTime
         new Date(event.qualTime).getFullYear() === selectedYear // Filter by selected year
-    );
+    ).sort((a, b) => {
+      //sort months in ascending order from 0, 1 e.g. january, february in case they are inserted in random order
+      const monthA = new Date(a.qualTime).getMonth();
+      const monthB = new Date(b.qualTime).getMonth();
+
+      return monthA - monthB;
+    })
   };
 
   // Get filtered events for the selected year
