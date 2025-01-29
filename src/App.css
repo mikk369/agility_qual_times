@@ -46,6 +46,19 @@ body {
   max-width: 1200px; 
 }
 
+@media (max-width: 1150px) {
+  .qual-grid-container {
+    grid-template-columns: repeat(2, auto);
+    max-width: 650px; 
+  }
+}
+@media (max-width: 700px) {
+  .qual-grid-container {
+    grid-template-columns: repeat(1, auto);
+    max-width: 300px; 
+  }
+}
+
 .qual-box {
   border: 1px solid #0071FF;
   border-radius: 8px;
